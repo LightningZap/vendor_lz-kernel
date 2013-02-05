@@ -13,10 +13,6 @@ PRODUCT_COPY_FILES += \
     vendor/lz-kernel/scripts/etc/init.d/11sysctltweaks:system/etc/init.d/11sysctltweaks \
     vendor/lz-kernel/scripts/etc/init.d/12complete:system/etc/init.d/12complete \
 
-#Additional script to ensure governor tweaks work right. Be sure to add perms of 777 in your flash script
-PRODUCT_COPY_FILES += \
-    vendor/lz-kernel/scripts/etc/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
-
 # Root Browser Lite
 PRODUCT_COPY_FILES += \
     vendor/lz-kernel/apps/RootBrowser.apk:system/app \
@@ -27,3 +23,7 @@ PRODUCT_COPY_FILES += \
 # zipalign binary
 PRODUCT_COPY_FILES += \
      vendor/lz-kernel/binary/xbin/zipalign:system/xbin/zipalign \
+
+# Moved build.prop tweaks to default.prop
+$(call inherit-product, vendor/lz-kernel/defaultprop.h)
+
