@@ -13,9 +13,11 @@ PRODUCT_COPY_FILES += \
     vendor/lz-kernel/scripts/etc/init.d/11sysctltweaks:system/etc/init.d/11sysctltweaks \
     vendor/lz-kernel/scripts/etc/init.d/12complete:system/etc/init.d/12complete \
 
-# Root Browser Lite
+# Apps
 PRODUCT_COPY_FILES += \
-    vendor/lz-kernel/apps/RootBrowser.apk:system/app \
+    vendor/lz-kernel/apps/RootBrowser.apk:system/app/RootBrowser.apk \
+    vendor/lz-kernel/apps/VoltageControl.apk:system/app/VoltageControl.apk \
+
 # sysctl.conf
 PRODUCT_COPY_FILES += \
      vendor/lz-kernel/scripts/etc/sysctl.conf:system/etc/sysctl.conf \
@@ -24,6 +26,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
      vendor/lz-kernel/binary/xbin/zipalign:system/xbin/zipalign \
 
-# Moved build.prop tweaks to default.prop
-$(call inherit-product, vendor/lz-kernel/defaultprop.h)
+# Moved build.prop tweaks to default.prop. Removed for a better attempt using a .conf
+# $(call inherit-product, vendor/lz-kernel/defaultprop.h)
 
+# Trying prop tweaks with a build.prop(2)
+PRODUCT_COPY_FILES += \
+     vendor/lz-kernel/scripts/build.prop2:system/tweak.prop \
