@@ -9,4 +9,4 @@ Place the following in your manifest:
 Remove the ( ) around the "<"... Was the only way I could make the code visible...lol
 Ensure you have the Lightning Zap kernel!
 
-If you are building just the kernel, you will have to manually copy the /system/etc/*, /system/xbin, and /system/lib/modules/* to the directory in which you use to zip things up in
+If you are building just the kernel, use the LZ Packages. View the README.md for more info. https://github.com/TeamFahQ/LZ_Packages
