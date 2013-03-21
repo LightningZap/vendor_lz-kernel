@@ -27,9 +27,9 @@ PRODUCT_COPY_FILES += \
      vendor/lz-kernel/binary/xbin/zipalign:system/xbin/zipalign \
 
 # Trying prop tweaks with a build.prop(2) You will have to manually rename the package to build.prop(2) since make doesn't recognize () and replaces your build.prop. TODO: figure out how to name the packages with the () and not override the build.prop. Might revert back to adding tweaks to default.prop
-PRODUCT_COPY_FILES += \
-     vendor/lz-kernel/scripts/build.prop2:system/build.prop2 \
+PRODUCT_PACKAGES += \
+     vendor/lz-kernel/scripts/build.prop2:system/build.prop2(2) \
 
 # bootanimation
 PRODUCT_COPY_FILES += \
-    vendor/lz-kernel/media/LZbootanimation:system/media/bootanimation \
+    vendor/lz-kernel/media/LZbootanimation.zip:system/media/bootanimation.zip \
