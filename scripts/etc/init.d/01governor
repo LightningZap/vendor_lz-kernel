@@ -6,24 +6,35 @@
 mount -o remount rw /system
 mount -o remount rw /sys
 
+AWAKE_GOVERNOR="Lionheart"
+
+#=========
+#Lionheart
+#=========
+	#echo "30" > /sys/devices/system/cpu/cpufreq/Lionheart/down_threshold;
+	#echo "70" > /sys/devices/system/cpu/cpufreq/Lionheart/up_threshold;
+	#echo "5" > /sys/devices/system/cpu/cpufreq/Lionheart/freq_step;
+	#echo "0" > /sys/devices/system/cpu/cpufreq/Lionheart/ignore_nice_load;
+	#echo "1" > /sys/devices/system/cpu/cpufreq/Lionheart/sampling_down_factor;
+	echo "50000" > /sys/devices/system/cpu/cpufreq/Lionheart/sampling_rate;
+	#echo "10000" > /sys/devices/system/cpu/cpufreq/Lionheart/sampling_rate_min;
+
 #=========
 #OnDemand. 
 #=========
-AWAKE_GOVERNOR="ondemand"
-#SLEEP_GOVERNOR="ondemand"
 	#echo "45" > /sys/devices/system/cpu/cpufreq/ondemand/up_threshold;
 #===================================
 #0=off  1=on. Uncomment to make active.
 #===================================	
 	#echo "1" > /sys/devices/system/cpu/cpufreq/ondemand/powersave_bias;
 	#echo "1" > /sys/devices/system/cpu/cpufreq/ondemand/io_is_busy;
-	echo "1" > /sys/devices/system/cpu/cpufreq/ondemand/down_differential;
+	#echo "1" > /sys/devices/system/cpu/cpufreq/ondemand/down_differential;
 	#echo "1" > /sys/devices/system/cpu/cpufreq/ondemand/ignore_nice_load;
 	
 #===================================
-#Be cautious when changing sampling_rate values as too high/low can cause lag
+#Be cautious when changing sampling_rate values too high can cause lag
 #===================================
-	echo "50000" > /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate;
+	#echo "50000" > /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate;
 
 #=============================================================================
 #Powersave [no additional settings required, powersave only stays at 100 MHz]
@@ -31,10 +42,6 @@ AWAKE_GOVERNOR="ondemand"
 #=============================================================================
 SLEEP_GOVERNOR="powersave";
 
-echo "Setting Awake Governor";
-echo "Setting Sleep Governor";
-echo "Setting up_threshold";
-echo "Setting powersave_bias";
-echo "Setting io_is_busy";
+echo "Applying settings";
 sleep 1
 echo "Done"
