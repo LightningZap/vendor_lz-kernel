@@ -1,0 +1,36 @@
+#!/system/bin/sh
+#Sets RW Permissions for system apps
+
+mount -o remount rw /system
+
+logFile=/data/S02-make-system-apps-rw.log
+if [ -f $logFile ]; then
+    rm $logFile
+fi
+touch $logFile
+chmod 777 $logFile
+
+mount -o remount rw /sys
+echo "Setting permissions" >> $logFile
+    chmod 0771 /data/app/
+	
+echo "Setting permissions" >> $logFile
+	chmod 777 /system/app
+	chmod 777 /system/framework
+	chmod 777 /data/app
+
+        for file in /system/app/* /system/framework/* /data/app/*; do
+                echo "    setting permissions (666) for $file" >> $logFile
+                chmod 666 $file
+        done
+ 
+    chmod 06755 /system/xbin/su
+           
+        echo "chmodding init.d folder"
+        chmod 777 /system/etc/init.d
+        
+        for file in /system/etc/init.d/*; do
+                echo "    setting permissions (777) for $file" >> $logFile
+                chmod 777 $file
+        done
+echo "Permissions set" >> $logFile

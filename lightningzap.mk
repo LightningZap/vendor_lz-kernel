@@ -4,14 +4,12 @@
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/lz-kernel/scripts/etc/init.d/0remount:system/etc/init.d/0remount \
+    vendor/lz-kernel/scripts/etc/init.d/00lztweak:system/etc/init.d/00lztweak \
     vendor/lz-kernel/scripts/etc/init.d/01governor:system/etc/init.d/01governor \
-    vendor/lz-kernel/scripts/etc/init.d/03systweak:system/etc/init.d/03systweak \
-    vendor/lz-kernel/scripts/etc/init.d/04makesysappsrw:system/etc/init.d/0makesysappsrw \
-    vendor/lz-kernel/scripts/etc/init.d/07vaccum_sqlite:system/etc/init.d/07vaccum_sqlite \
-    vendor/lz-kernel/scripts/etc/init.d/10zipalign:system/etc/init.d/10zipalign \
-    vendor/lz-kernel/scripts/etc/init.d/11sysctltweaks:system/etc/init.d/11sysctltweaks \
-    vendor/lz-kernel/scripts/etc/init.d/12complete:system/etc/init.d/12complete \
+    vendor/lz-kernel/scripts/etc/init.d/02makesysappsrw:system/etc/init.d/02makesysappsrw \
+    vendor/lz-kernel/scripts/etc/init.d/04vaccum_sqlite:system/etc/init.d/04vaccum_sqlite \
+    vendor/lz-kernel/scripts/etc/init.d/05zipalign:system/etc/init.d/05zipalign \
+    vendor/lz-kernel/scripts/etc/init.d/89prop:system/etc/init.d/89prop \
 
 # Apps
 PRODUCT_COPY_FILES += \
