@@ -13,8 +13,8 @@ PRODUCT_COPY_FILES += \
 
 # Apps
 PRODUCT_COPY_FILES += \
-    vendor/lz-kernel/E4GTapps/RootBrowser.apk:system/app/RootBrowser.apk \
-    vendor/lz-kernel/E4GTapps/VoltageControl.apk:system/app/VoltageControl.apk \
+    vendor/lz-kernel/E4GT/apps/RootBrowser.apk:system/app/RootBrowser.apk \
+    vendor/lz-kernel/E4GT/apps/VoltageControl.apk:system/app/VoltageControl.apk \
 
 # sysctl.conf
 PRODUCT_COPY_FILES += \
