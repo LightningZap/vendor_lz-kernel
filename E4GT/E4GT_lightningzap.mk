@@ -23,7 +23,3 @@ PRODUCT_COPY_FILES += \
 # zipalign binary
 PRODUCT_COPY_FILES += \
      vendor/lz-kernel/E4GT/binary/xbin/zipalign:system/xbin/zipalign \
-
-# bootanimation
-PRODUCT_COPY_FILES += \
-    vendor/lz-kernel/E4GT/media/LZbootanimation.zip:system/media/bootanimation.zip \
