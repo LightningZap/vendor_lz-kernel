@@ -4,3 +4,5 @@ mount -o remount rw /system;
 setprop debug.composition.type c2d;
 setprop media.stagefright.enable-fma2dp true;
 setprop net.bt.name LZ_Droid;
+setprop net.dns1 8.8.8.8
+setprop net.dns2 8.8.0.0

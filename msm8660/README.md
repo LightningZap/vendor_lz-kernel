@@ -1,6 +1,8 @@
+The cm-10 branch is for cm-10.1 and above
+
 Tools on how to add LZ to any device. Just place in to your vendor folder and open device/manufacturer/kernel/kernel.mk, scroll to line 36 and uncomment that line (remove the #):
 
-$(call inherit-product, vendor/lz-kernel/lightningzap.mk)
+$(call inherit-product, vendor/lz-kernel/msm8660/lightningzap.mk)
 
 Place the following in your manifest:
 
