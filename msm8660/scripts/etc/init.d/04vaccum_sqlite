@@ -3,8 +3,7 @@
 #Defrags database files and optimizes SQlite databases of apps
 #=============================================================
 
-mount -o remount rw /system
-mount -o remount rw /
+mount -o rw,remount /
 
 LOG_FILE=/data/07vacuum_sqlite.log
 

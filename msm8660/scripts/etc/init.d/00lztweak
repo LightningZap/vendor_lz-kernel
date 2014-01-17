@@ -1,7 +1,7 @@
 #!/system/bin/sh
 #Lightning Zap universal tweaks. Since I have added most of the values for the LZ scripts, I decided to combine the remaining scripts.
 
-mount -o remount rw /system;
+mount -o rw,remount /system;
 
 # 0remount
 #Partition mounts by Dsexton702
