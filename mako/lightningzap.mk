@@ -12,4 +12,3 @@ PRODUCT_COPY_FILES += \
 # Apps
 PRODUCT_COPY_FILES += \
     vendor/lz-kernel/mako/apps/RootBrowser.apk:system/app/RootBrowser.apk \
-    vendor/lz-kernel/mako/apps/VoltageControl.apk:system/app/VoltageControl.apk \
