@@ -1,0 +1,8 @@
+#!/system/bin/sh
+# Automatcially enable sweep2wake and/or doubletap2week at boot
+# To enable either or both, remove the # before lines 7 and/or 8 and reboot
+
+mount -o remount,rw /;
+
+#echo 1 > /sys/android_touch/sweep2wake
+#echo 1 > /sys/android_touch/doubletap2wake
