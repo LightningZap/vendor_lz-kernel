@@ -6,10 +6,5 @@
 PRODUCT_COPY_FILES += \
     vendor/lz-kernel/mako/scripts/etc/init.d/00lztweak:system/etc/init.d/00lztweak \
     vendor/lz-kernel/mako/scripts/etc/init.d/01governor:system/etc/init.d/01governor \
-    vendor/lz-kernel/mako/scripts/etc/init.d/04vaccum_sqlite:system/etc/init.d/04vaccum_sqlite \
     vendor/lz-kernel/mako/scripts/etc/init.d/05s2w:system/etc/init.d/05s2w \
     vendor/lz-kernel/mako/scripts/etc/init.d/89prop:system/etc/init.d/89prop \
-
-# Apps
-PRODUCT_COPY_FILES += \
-    vendor/lz-kernel/mako/apps/RootBrowser.apk:system/app/RootBrowser.apk \
