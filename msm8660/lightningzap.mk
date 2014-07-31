@@ -4,7 +4,6 @@
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/lz-kernel/msm8660/scripts/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/lz-kernel/msm8660/scripts/etc/init.d/00lztweak:system/etc/init.d/00lztweak \
     vendor/lz-kernel/msm8660/scripts/etc/init.d/01governor:system/etc/init.d/01governor \
     vendor/lz-kernel/msm8660/scripts/etc/init.d/04vaccum_sqlite:system/etc/init.d/04vaccum_sqlite \
