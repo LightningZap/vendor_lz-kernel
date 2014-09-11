@@ -12,4 +12,3 @@ PRODUCT_COPY_FILES += \
 # Apps
 PRODUCT_COPY_FILES += \
     vendor/lz-kernel/msm8660/apps/RootBrowser.apk:system/app/RootBrowser.apk \
-    vendor/lz-kernel/msm8660/apps/VoltageControl.apk:system/app/VoltageControl.apk \
