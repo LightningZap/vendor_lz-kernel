@@ -1,0 +1,5 @@
+#!/system/bin/sh
+
+# Fix sdcard issues with lollipop
+
+restorecon -FR /data/media/0
